@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install: 
-  - docker build -t Praveen-TJ/docker-react -f Dockerfile.dev .
+  - docker build -t praveen-tj/docker-react -f Dockerfile.dev .
 
 script: 
-  -  docker run -e CI=true Praveen-TJ/docker-react npm run test
+  -  docker run -e CI=true praveen-tj/docker-react npm run test
